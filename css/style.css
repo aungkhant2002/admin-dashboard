@@ -5,24 +5,46 @@
 }
 
 :root {
-    --bg-color: #f9f9f9;
+    --bg-color: #f3f3f3;
 }
 
 .main {
 
 }
 
-.aside {
+.sidebar {
 
+}
+
+.show-sidebar-btn {
+    cursor: pointer;
 }
 
 .content {
     background-color: var(--bg-color);
-    overflow: scroll;
+    overflow-y: scroll;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
 }
 
 .header {
     position: sticky;
     top: 0.2rem;
     z-index: 2000;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 780px){
+    .sidebar {
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        background-color: var(--light);
+        margin-left: -100%;
+        display: block !important;
+    }
 }
