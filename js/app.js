@@ -9,3 +9,9 @@ $(".hide-sidebar-btn").on("click", function () {
         marginLeft: "-100%",
     });
 });
+
+function go(url) {
+    setTimeout(function () {
+        location.href = `${url}`;
+    }, 500);
+}

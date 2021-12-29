@@ -38,6 +38,21 @@
     border-radius: 50%;
 }
 
+.status-card {
+    border: none;
+    transition: 0.3s;
+}
+
+.status-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.status-card:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
 @media screen and (max-width: 780px){
     .sidebar {
         position: fixed;
