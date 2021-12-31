@@ -23,7 +23,7 @@
 .content {
     background-color: var(--bg-color);
     overflow-y: scroll;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) inset;
 }
 
 .header {
@@ -57,7 +57,15 @@
     margin-left: -25px;
 }
 
-@media screen and (max-width: 780px){
+.item-carousel {
+    /*margin-top: -100px;*/
+}
+
+.item-card-img {
+    height: 200px;
+}
+
+@media screen and (max-width: 780px) {
     .sidebar {
         position: fixed;
         width: 300px;
