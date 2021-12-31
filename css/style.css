@@ -65,6 +65,15 @@
     height: 200px;
 }
 
+.sub-list tr {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sub-list tr:active {
+    transform: scale(1.03);
+}
+
 @media screen and (max-width: 480px) {
     .ov-img {
         width: 30px;
