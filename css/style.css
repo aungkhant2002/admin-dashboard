@@ -58,11 +58,27 @@
 }
 
 .item-carousel {
-    /*margin-top: -100px;*/
+    margin-top: -100px;
 }
 
 .item-card-img {
     height: 200px;
+}
+
+@media screen and (max-width: 480px) {
+    .ov-img {
+        width: 30px;
+        height: 30px;
+        margin-left: -16px;
+    }
+
+    .item-carousel {
+        margin-top: -60px;
+    }
+
+    .item-card-img {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -73,5 +89,9 @@
         background-color: var(--light);
         margin-left: -100%;
         display: block !important;
+    }
+
+    .item-carousel-card {
+        margin-top: 50px;
     }
 }
