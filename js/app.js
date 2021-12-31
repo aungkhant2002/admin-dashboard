@@ -15,3 +15,7 @@ function go(url) {
         location.href = `${url}`;
     }, 500);
 }
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
