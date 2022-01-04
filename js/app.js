@@ -28,5 +28,15 @@ $(".full-screen-btn").on("click", function () {
     } else {
         $(this).html(`<i class="feather-maximize-2"></i>`);
     }
+});
 
-})
+// window ရဲ့ height ကို ရှာ
+let screenHeight = $(window).height();
+// current active menu ရဲ့ height ကို ရှာ
+let currentMenuHeight = $(".nav-menu .active").offset().top;
+
+if (currentMenuHeight > screenHeight * 0.8) {
+    $(".sidebar").animate({
+        scrollTop: currentMenuHeight
+    }, 1000)
+}
